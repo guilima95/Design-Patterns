@@ -1,2 +1,2 @@
 # Design-Patterns
-Design patterns that are more used and knowledged using csharp
+Design patterns that are more used and knowledge using csharp
