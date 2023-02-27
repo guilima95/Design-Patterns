@@ -26,7 +26,7 @@ static void Menu()
     switch (option.KeyChar)
     {
         case '1':
-            var creatorRent = new CreatorPaymentRent();
+            var creatorRent = new ConcreteCreatorPaymentRent();
             var paymentRent = creatorRent.Pay();
             Console.WriteLine("What is description?");
             var descRent = Console.ReadLine();
@@ -39,7 +39,7 @@ static void Menu()
             paymentRent.Pay(2000);
             break;
         case '2':
-            var creatorBuy = new CreatorPaymentBuy();
+            var creatorBuy = new ConcreteCreatorPaymentBuy();
             var paymentBuy = creatorBuy.Pay();
             Console.WriteLine("What is description?");
             var descBuy = Console.ReadLine();

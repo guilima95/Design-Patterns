@@ -1,13 +1,12 @@
 namespace FactoryMethod
 {
-    public class PaymentRent : Payment
+    public class ConcretePaymentBuy : Payment
     {
         public override void FillProps(string description, string type)
         {
             Description = description;
             Type = type;
         }
-
         public override void Pay(decimal value)
         {
             {
