@@ -1,4 +1,20 @@
-﻿
+﻿/*
+The Abstract Factory design pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+Client -> Program.cs
+
+AbstractProductA -> Cake
+AbstractProductB -> Pizza
+
+CreateProductA -> CakeFactory
+CreateProductB -> PizzaFactory
+
+ProductA -> Cake
+ProductB -> Pizza
+
+Reference: https://www.dofactory.com/net/abstract-factory-design-pattern
+*/
+
+
 using AbstractFactory;
 using AbstractFactory.Enums;
 using AbstractFactory.Factory;
