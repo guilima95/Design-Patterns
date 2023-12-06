@@ -1,17 +1,16 @@
-namespace FactoryMethod
+namespace FactoryMethod;
+
+public class ConcretePaymentBuy : Payment
 {
-    public class ConcretePaymentBuy : Payment
+    public override void FillProps(string description, string type)
     {
-        public override void FillProps(string description, string type)
+        Description = description;
+        Type = type;
+    }
+    public override void Pay(decimal value)
+    {
         {
-            Description = description;
-            Type = type;
-        }
-        public override void Pay(decimal value)
-        {
-            {
-                Console.WriteLine($@"The account {Description} was paid by {Type} on value of {value}");
-            }
+            Console.WriteLine($@"The account {Description} was paid by {Type} on value of {value}");
         }
     }
 }

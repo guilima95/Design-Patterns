@@ -1,10 +1,9 @@
-namespace FactoryMethod
+namespace FactoryMethod;
+
+public class ConcreteCreatorPaymentBuy : CreatorPayment
 {
-    public class ConcreteCreatorPaymentBuy : CreatorPayment
+    public override Payment Pay()
     {
-        public override Payment Pay()
-        {
-            return new ConcretePaymentBuy();
-        }
+        return new ConcretePaymentBuy();
     }
 }

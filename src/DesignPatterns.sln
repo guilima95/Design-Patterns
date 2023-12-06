@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Abstract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{030DAA9D-B449-4B5D-8F71-A4DC3CC2B8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{6C785594-556D-4BF0-8E03-C6BD9B403C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{6C785594-556D-4BF0-8E03-C6BD9B403C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6C785594-556D-4BF0-8E03-C6BD9B403C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C785594-556D-4BF0-8E03-C6BD9B403C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C785594-556D-4BF0-8E03-C6BD9B403C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

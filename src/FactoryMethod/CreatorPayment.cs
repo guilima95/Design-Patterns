@@ -1,7 +1,6 @@
-namespace FactoryMethod
+namespace FactoryMethod;
+
+public abstract class CreatorPayment
 {
-    public abstract class CreatorPayment
-    {
-        public abstract Payment Pay();
-    }
+    public abstract Payment Pay();
 }

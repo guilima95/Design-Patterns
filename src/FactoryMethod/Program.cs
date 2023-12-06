@@ -1,4 +1,4 @@
-﻿using FactoryMethod;
+using FactoryMethod;
 
 /// <summary>
 /// Abstract Method:
@@ -17,7 +17,7 @@ static void Menu()
     Console.WriteLine("1 - Rent");
     Console.WriteLine("2 - Buy");
 
-    var option = Console.ReadKey();
+    ConsoleKeyInfo option = Console.ReadKey();
 
     Console.WriteLine("");
     Console.WriteLine("...............");
@@ -26,28 +26,42 @@ static void Menu()
     switch (option.KeyChar)
     {
         case '1':
-            var creatorRent = new ConcreteCreatorPaymentRent();
-            var paymentRent = creatorRent.Pay();
+            ConcreteCreatorPaymentRent creatorRent = new ConcreteCreatorPaymentRent();
+            Payment paymentRent = creatorRent.Pay();
             Console.WriteLine("What is description?");
-            var descRent = Console.ReadLine();
+            string? descRent = Console.ReadLine();
             Console.WriteLine("What is type?");
-            var typeRent = Console.ReadLine();
+            string? typeRent = Console.ReadLine();
             Console.WriteLine("");
             Console.WriteLine("...............");
             Console.WriteLine("");
+
+            if (string.IsNullOrEmpty(descRent) || string.IsNullOrEmpty(typeRent))
+            {
+                Console.WriteLine("Ops, none option found with this key. Description and Type cannot be null");
+                break;
+            }
+
             paymentRent.FillProps(descRent.ToString(), typeRent.ToString());
             paymentRent.Pay(2000);
             break;
         case '2':
-            var creatorBuy = new ConcreteCreatorPaymentBuy();
-            var paymentBuy = creatorBuy.Pay();
+            ConcreteCreatorPaymentBuy creatorBuy = new ConcreteCreatorPaymentBuy();
+            Payment paymentBuy = creatorBuy.Pay();
             Console.WriteLine("What is description?");
-            var descBuy = Console.ReadLine();
+            string? descBuy = Console.ReadLine();
             Console.WriteLine("What is type?");
-            var typeBuy = Console.ReadLine();
+            string? typeBuy = Console.ReadLine();
             Console.WriteLine("");
             Console.WriteLine("...............");
             Console.WriteLine("");
+
+            if (string.IsNullOrEmpty(descBuy) || string.IsNullOrEmpty(typeBuy))
+            {
+                Console.WriteLine("Ops, none option found with this key. Description and Type cannot be null");
+                break;
+            }
+
             paymentBuy.FillProps(descBuy.ToString(), typeBuy.ToString());
             paymentBuy.Pay(12000);
             break;
