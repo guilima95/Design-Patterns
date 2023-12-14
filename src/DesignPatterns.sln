@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{6C785594-556D-4BF0-8E03-C6BD9B403C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{3DB1BD33-77C9-4874-B966-1471E4F59E6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4908A8A-8BC8-48DF-8BD8-4A0C18DB0024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB1BD33-77C9-4874-B966-1471E4F59E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB1BD33-77C9-4874-B966-1471E4F59E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB1BD33-77C9-4874-B966-1471E4F59E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB1BD33-77C9-4874-B966-1471E4F59E6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

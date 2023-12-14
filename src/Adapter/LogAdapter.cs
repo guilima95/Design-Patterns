@@ -2,14 +2,9 @@ namespace Adapter;
 
 // Adapter Class: 
 // adapts the interface Adaptee to the Target interface.
-public class LogAdapter : ILogger
+public class LogAdapter(ILoggerCustom loggerCustom) : ILogger
 {
-    private readonly ILoggerCustom _loggerCustom;
-
-    public LogAdapter(ILoggerCustom loggerCustom)
-    {
-        _loggerCustom = loggerCustom;
-    }
+    private readonly ILoggerCustom _loggerCustom = loggerCustom;
 
     public void Log(string message)
     {

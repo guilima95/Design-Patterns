@@ -3,14 +3,9 @@ namespace Adapter;
 // Client:
 // collaborates with objects conforming to the Target interface.
 
-public class ClientService
+public class ClientService(ILogger logger)
 {
-    private readonly ILogger _logger;
-
-    public ClientService(ILogger logger)
-    {
-        _logger = logger;
-    }
+    private readonly ILogger _logger = logger;
 
     public void AddClient()
     {
